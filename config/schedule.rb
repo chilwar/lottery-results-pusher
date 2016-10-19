@@ -5,7 +5,7 @@
 # Learn more: http://github.com/javan/whenever
 env :PATH, ENV['PATH']
 
-set :output, "log/whenever.log"
+set :output, "/tmp/whenever.log"
 
 # 双色球  每周二、四、日 21:15 开奖
 # 星期几在代码里判断=_=!
