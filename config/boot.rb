@@ -10,3 +10,7 @@ require 'open-uri'
 CONFIG = YAML.load_file(File.join(File.expand_path('..', __FILE__), 'config.yml'))
 
 require 'lottery/results'
+
+if ENV['RAILS_ENV'] != 'test'
+  Rake.application.run
+end
