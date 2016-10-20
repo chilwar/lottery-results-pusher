@@ -2,9 +2,9 @@
 
 SMS API用的是twilio，地址：<https://www.twilio.com/>，免费的短信接口，注册获取account_sid，auth_token和twilio phone number．
 
-双色球是每周二、四、日21:15开奖，21:20发短信．
+双色球是每周二、四、日21:15开奖，21:35发短信．
 
-大乐透是每周一、三、六20:30开奖，20:35发短信．
+大乐透是每周一、三、六20:30开奖，20:50发短信．
 
     cp config/config.yml.sample config/config.yml
 
