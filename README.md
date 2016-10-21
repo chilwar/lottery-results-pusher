@@ -13,6 +13,7 @@ SMS API用的是[twilio](https://www.twilio.com/)，免费的短信接口，注�
 ### Config
 
 sms:from 填写 twilio phone number.
+
 sms:to 填写接收短信的手机号，可填多个．
 
     client:
