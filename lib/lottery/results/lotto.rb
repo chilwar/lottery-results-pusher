@@ -1,14 +1,8 @@
+require 'lottery/results/base'
 # 大乐透
 module Lottery
   module Results
-    class Lotto
-      attr_accessor :content
-
-      def initialize
-        url = 'http://baidu.lecai.com/lottery/draw'
-        self.content = Nokogiri::HTML(open(url))
-      end
-
+    class Lotto < Base
       def result
         name = "大乐透"
         
@@ -20,8 +14,6 @@ module Lottery
 
         "#{ time } #{ name }开奖结果： #{ numbers }"
       end
-
-      private :content=
     end
   end
 end

@@ -1,14 +1,8 @@
+require 'lottery/results/base'
 # 双色球
 module Lottery
   module Results
-    class DoubleColorBall
-      attr_accessor :content
-
-      def initialize
-        url = 'http://baidu.lecai.com/lottery/draw'
-        self.content = Nokogiri::HTML(open(url))
-      end
-
+    class DoubleColorBall < Base
       def result
         name = "双色球"
         
@@ -20,8 +14,6 @@ module Lottery
 
         "#{ time } #{ name }开奖结果： #{ numbers }"
       end
-
-      private :content=
     end
   end
 end

@@ -15,6 +15,6 @@ end
 
 # 大乐透  每周一、三、六 20:30 开奖
 # 星期几在代码里判断=_=!
-every :day, at: '20:50' do
+every :day, at: '21:00' do
   rake "lottery:lotto"
 end
